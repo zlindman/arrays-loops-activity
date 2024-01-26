@@ -14,6 +14,12 @@
 // 3. painting
 // Total hobbies: 3
 
+let hobbies = ['reading', 'watching movies', 'walking', 'cooking'];
+for (hobby of hobbies){
+     console.log (hobby);
+}
+console.log (hobbies.length);
+
 /**
  * #2 Colors
  * ---------
@@ -29,6 +35,23 @@
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
+
+let colors = ['pink', 'yellow', 'teal', 'teal', 'orange'];
+let tealCount = 0
+
+for(let index = 0; index < colors.length; index += 1){
+     if (colors[index] === 'teal'){
+     tealCount +=1;
+     }
+     else{
+     tealCount += 0
+     }
+}
+console.log (colors);
+console.log (tealCount);
+
+
+
 
 
 /**
@@ -47,6 +70,20 @@
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
 
+let numbers = [1, 4, 7, 34, 79];
+let oddNumbers = [];
+let evenNumbers = [];
+for (let index = 0; index < numbers.length; index +=1){
+     if(numbers[index] % 2 === 0){
+          evenNumbers.push(numbers[index]);
+     }
+     else{
+          oddNumbers.push(numbers[index]);
+     }
+}
+console.log(numbers);
+console.log(evenNumbers);
+console.log(oddNumbers);
 
 /**
  * #4 Flipping Switches
@@ -61,6 +98,19 @@
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
+
+let trueFalse = [true, false, false, true, true, true, false];
+let toggled = [];
+for (let index = 0; index < trueFalse.length; index +=1){
+     if (trueFalse[index] === true){
+          toggled.push(false);
+     }
+     else{
+          toggled.push(true)
+     }
+}
+console.log (trueFalse);
+console.log(toggled);
 
 
 /**
@@ -80,6 +130,20 @@
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
 
+let newNumbers = [1, 5, 0, 9, 0, 8, 0, 3, 6, 0, 0];
+while (newNumbers <= newNumbers.length){
+if (newNumbers[newNumbers] === 0){
+     newNumbers.pop(newNumbers[newNumbers]);
+}
+     newNumbers ++;
+}
+
+for (let index = 0; index < newNumbers.length; index += 1){
+     if(newNumbers[index] === 0){
+          newNumbers.pop(newNumbers[index]);
+     }     
+}
+console.log(newNumbers);
 
 /**
  * #6 (STRETCH) Highest & Lowest
